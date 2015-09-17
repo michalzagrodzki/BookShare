@@ -9,5 +9,8 @@ namespace BookShare.Models
     {
         public int ID { get; set; }
         public string Place { get; set; }
+
+        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

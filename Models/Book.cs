@@ -15,5 +15,11 @@ namespace BookShare.Models
         public string Publisher { get; set; }
         public int PublishedDate { get; set; }
         public int PageCount { get; set; }
+
+        public virtual User User { get; set; }
+        public virtual Genre Genre { get; set; }
+        public virtual Location Location { get; set; }
+        public virtual ICollection<Reservation> Reservations { get; set; }
+        public virtual ICollection<Tag> Tags { get; set; }
     }
 }
