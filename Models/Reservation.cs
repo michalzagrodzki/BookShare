@@ -7,7 +7,9 @@ namespace BookShare.Models
 {
     public class Reservation
     {
-        public int ID { get; set; }
+        public int ReservationID { get; set; }
+        public int BookID { get; set; }
+        public int UserID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime ReservationDate { get; set; }

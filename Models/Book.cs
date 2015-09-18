@@ -7,7 +7,10 @@ namespace BookShare.Models
 {
     public class Book
     {
-        public int ID { get; set; }
+        public int BookID { get; set; }
+        public int LocationID { get; set; }
+        public int UserID { get; set; }
+        public int GenreID { get; set; }
         public string Author { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }

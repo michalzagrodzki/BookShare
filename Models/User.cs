@@ -9,7 +9,8 @@ namespace BookShare.Models
     public class User : IdentityUser
     {
     
-        public int ID { get; set; }
+        public int UserID { get; set; }
+        public int LocationID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Bio { get; set; }

@@ -7,7 +7,8 @@ namespace BookShare.Models
 {
     public class Tag
     {
-        public int ID { get; set; }
+        public int TagID { get; set; }
+        public int BookID { get; set; }
         public string Name { get; set; }
 
         public virtual Book Book { get; set; }
